@@ -1,0 +1,14 @@
+{
+  "name": "transaction-isolation-level",
+  "compatibility_date": "2026-08-25",
+  "workers_dev": false,
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    {
+      "pattern": "transaction-isolation-level.shinkeonkim.com",
+      "custom_domain": true
+    }
+  ]
+}
