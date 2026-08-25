@@ -1,0 +1,3 @@
+export function Overview() {
+  return <section className="section" id="concept"><div className="container"><p className="eyebrow">The core idea</p><h2 className="section-title">격리는 잠금의 강도가 아니라 <span className="gradient-text">보이는 데이터의 규칙</span>입니다.</h2><p className="section-lead">격리 수준은 동시에 실행되는 트랜잭션 사이에서 어떤 변경을 언제 관찰할 수 있는지 정의합니다. DBMS는 잠금, MVCC 또는 두 방식을 조합해 이 규칙을 구현합니다.</p><div className="overview-grid"><article className="panel"><h3>ACID의 I, Isolation</h3><p>각 트랜잭션이 혼자 실행되는 것처럼 보이게 만드는 성질입니다. 높은 격리는 허용되는 실행 순서를 줄이지만 충돌과 재시도 비용을 높일 수 있습니다.</p></article><article className="panel"><h3>정합성과 처리량의 선택</h3><p>“높을수록 항상 느리다”는 단순화는 정확하지 않습니다. 읽기·쓰기 비율, 인덱스, 충돌 빈도와 DBMS 구현에 따라 실제 비용이 달라집니다.</p></article></div></div></section>
+}
