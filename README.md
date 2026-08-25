@@ -28,19 +28,29 @@
 | REPEATABLE READ | 미발생 | 미발생 | 발생 |
 | SERIALIZABLE | 미발생 | 미발생 | 미발생 |
 
+## 개발
+
+```bash
+bun install
+bun run dev
+bun run build
+bun run deploy
+```
+
+Vite + React + TypeScript 기반이며, Cloudflare Workers Static Assets를 통해 `dist` 디렉터리를 배포합니다.
+
 ## 디자인 시스템
 
-**High-Fidelity Claymorphism** 기반으로 제작되었습니다.
+`DESIGN.md`의 **Corporate Trust** 디자인 시스템을 기반으로 제작되었습니다.
 
-- **색상**: Candy Shop Palette (라벤더 캔버스, 바이올렛 / 핫핑크 / 스카이블루 액센트)
-- **타이포그래피**: Nunito (헤딩 700–900), DM Sans (본문 400–700)
-- **그림자**: 4-layer clay shadow 시스템
-- **형태**: border-radius 최소 20px, 카드 32px, 대형 컨테이너 48px
-- **애니메이션**: 플로팅 블롭(8–13s 루프), 스크롤 리빌, 호버 리프트
+- **색상**: Indigo / Violet 그라디언트와 Slate 기반 엔터프라이즈 팔레트
+- **타이포그래피**: Plus Jakarta Sans
+- **시각화**: 격리 수준과 SQL 시나리오를 결합한 Sticky Scroll Story
+- **애니메이션**: IntersectionObserver 기반 단계 전환과 트랜잭션 타임라인
 
 ## 구현 특징
 
-- 단일 HTML 파일 (외부 CSS/JS 의존 없음, Google Fonts 제외)
+- React 컴포넌트 및 콘텐츠 데이터 모듈 분리
 - 완전 반응형 (모바일 우선)
 - `prefers-reduced-motion` 지원
 - WCAG AA 대비 준수
