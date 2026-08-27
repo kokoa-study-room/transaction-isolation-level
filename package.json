@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postinstall": "bun run build",
     "preview": "vite preview",
     "deploy": "bun run build && wrangler deploy"
   },
